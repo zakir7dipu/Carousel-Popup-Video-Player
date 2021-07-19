@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>video scroll</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<div class="container text-center my-3">
+
+    <div class="col-lg-8 mx-auto">
+        <div class="row mx-auto my-auto">
+            <div class="w-100">
+                <img id="mainPlayerThumbnail" class="d-block img-fluid" src="" style="width: 100%; height: 300px;">
+            </div>
+            <div id="videosCarousel" class="carousel slide w-100" data-ride="carousel">
+                <div class="carousel-inner videosCarousel-inner w-100" role="listbox">
+                    <div class="carousel-item active" data-file="https://www.youtube.com/watch?v=om4qTKMuPPs">
+                        <img width="900" height="1200" class="d-block col-3 img-fluid" src="https://cdn.shopify.com/s/files/1/2304/9095/files/NMSDC.png?10873">
+                    </div>
+
+                    <div class="carousel-item" data-file="https://www.youtube.com/watch?v=Xn_cS0DTHho">
+                        <img class="d-block col-3 img-fluid" src="https://cdn.shopify.com/s/files/1/2304/9095/files/DBE-ACDBE-logo.png?10873">
+                    </div>
+
+                    <div class="carousel-item" data-file="https://www.youtube.com/watch?v=VMcnw9MfkIE">
+                        <img class="d-block col-3 img-fluid" src="https://cdn.shopify.com/s/files/1/2304/9095/files/MBE_LOGO.png?10873">
+                    </div>
+
+                    <div class="carousel-item" data-file="https://www.youtube.com/watch?v=aHAtLE0ip9A">
+                        <img class="d-block col-3 img-fluid" src="https://cdn.shopify.com/s/files/1/2304/9095/files/2018_WBENC_logo_text_gray.png?10873">
+                    </div>
+
+                    <div class="carousel-item" data-file="https://www.youtube.com/watch?v=3Ny7jSTWOdQ">
+                        <img class="d-block col-3 img-fluid" src="http://novel-mg.com/assets/cert_logo.png">
+                    </div>
+
+                    <div class="carousel-item" data-file="https://www.youtube.com/watch?v=89gbpMdwfAI">
+                        <img class="d-block col-3 img-fluid" src="https://www.kriaanet.com/wp-content/uploads/2019/02/300ppi-feat-logo_feat_logo-EDWOSB.png">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#videosCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#videosCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div id="popupVideoPlayer" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-body">
+                <iframe style="width: 100%; height: 425px" src="" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="./scripts/./jquery.touchSwipe.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="./scripts/./video-carousel.js"></script>
+</body>
+</html>

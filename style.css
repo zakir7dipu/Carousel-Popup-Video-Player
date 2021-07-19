@@ -1,0 +1,22 @@
+
+.videosCarousel-inner .carousel-item.active,
+.videosCarousel-inner .carousel-item-next,
+.videosCarousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+.videosCarousel-inner .carousel-item-right.active,
+.videosCarousel-inner .carousel-item-next {
+    transform: translateX(25%);
+}
+
+.videosCarousel-inner .carousel-item-left.active,
+.videosCarousel-inner .carousel-item-prev {
+    transform: translateX(-25%);
+}
+
+.videosCarousel-inner .carousel-item-right,
+.videosCarousel-inner .carousel-item-left{
+    transform: translateX(0);
+
+}
